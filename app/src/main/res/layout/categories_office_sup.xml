@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_height="match_parent"
+             android:layout_width="wrap_content"
+             android:background="@drawable/back1">
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="2"
+    >
+        <android.support.v7.widget.CardView
+                android:id="@+id/pism"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
+                <ImageView
+                        android:id="@+id/pictureView"
+                        android:background="@drawable/p"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+                <TextView
+                        android:id="@+id/titleView"
+                        android:text="Письменные принадлежности"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/vengeance"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+                android:id="@+id/notes"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <ImageView
+                        android:id="@+id/pictureView2"
+                        android:background="@drawable/not"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"/>
+                <TextView
+                        android:id="@+id/titleView2"
+                        android:text="Тетради и блокноты"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/vengeance"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+                android:id="@+id/penali"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <ImageView
+                        android:id="@+id/pictureView3"
+                        android:background="@drawable/penali"
+                        android:layout_width="211dp"
+                        android:layout_height="200dp"/>
+                <TextView
+                        android:id="@+id/titleView3"
+                        android:text="Пеналы и обложки"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/vengeance"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+                android:id="@+id/bags"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <ImageView
+                        android:id="@+id/pictureView4"
+                        android:background="@drawable/bags"
+                        android:layout_width="match_parent"
+                        android:layout_height="199dp"/>
+                <TextView
+                        android:id="@+id/titleView4"
+                        android:text="Рюкзаки и сумки"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/vengeance"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </GridLayout>
+</FrameLayout>
+
+
+
+

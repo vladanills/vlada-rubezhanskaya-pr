@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "724929742075",
+    "firebase_url": "https://mezhdustrok-a2678.firebaseio.com",
+    "project_id": "mezhdustrok-a2678",
+    "storage_bucket": "mezhdustrok-a2678.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724929742075:android:ee1d1d85585c40d5",
+        "android_client_info": {
+          "package_name": "com.example.vlada_rubezhanskaya_pr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724929742075-4ltm5qfns5b86u14r85k5irc6t8tud12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyJG3M5ZvXzSsnI1UXn9RxVJWx70FFSVk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
