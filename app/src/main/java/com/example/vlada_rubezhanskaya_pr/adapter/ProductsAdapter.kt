@@ -1,11 +1,13 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import com.example.vlada_rubezhanskaya_pr.R
+import com.example.vlada_rubezhanskaya_pr.model.Product
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.product_item.view.*
+import kotlinx.android.synthetic.main.item_product.view.*
 import org.jetbrains.anko.layoutInflater
 
 class ProductsAdapter(
@@ -15,7 +17,7 @@ class ProductsAdapter(
 
     override fun onCreateViewHolder(recyclerView: ViewGroup, viewType: Int) = run {
         val view = context.layoutInflater.inflate(
-            R.layout.product_item,
+            R.layout.item_product,
             recyclerView,
             false
         )

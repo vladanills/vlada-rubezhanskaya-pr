@@ -1,5 +1,8 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.screen
 
+import com.example.vlada_rubezhanskaya_pr.di
+import com.example.vlada_rubezhanskaya_pr.model.CategoryProd
+import com.example.vlada_rubezhanskaya_pr.request.RequestMaker
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.list
 import org.kodein.di.direct

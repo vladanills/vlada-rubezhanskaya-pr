@@ -1,8 +1,10 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.screen
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.vlada_rubezhanskaya_pr.KEY_PRODUCTS_URL
+import com.example.vlada_rubezhanskaya_pr.R
 import kotlinx.android.synthetic.main.categories_office_sup.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
@@ -13,7 +15,7 @@ class CategoriesOfficeSup : AppCompatActivity() {
         setContentView(R.layout.categories_office_sup)
         // Что за писм?))
         pism.onClick{
-            val intent = Intent(this@CategoriesOfficeSup,ProductsActivity::class.java)
+            val intent = Intent(this@CategoriesOfficeSup, ProductsActivity::class.java)
 
             // Значия строковых параметров нужно либо вынести в ресурсы, либо в константы
             // Ссылки тоже такой быть не должно здесь, но это, я так понимаю, условность задания

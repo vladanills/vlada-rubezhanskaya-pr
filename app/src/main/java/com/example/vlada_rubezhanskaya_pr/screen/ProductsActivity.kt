@@ -1,8 +1,12 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.screen
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.vlada_rubezhanskaya_pr.KEY_PRODUCTS_URL
+import com.example.vlada_rubezhanskaya_pr.R
+import com.example.vlada_rubezhanskaya_pr.adapter.ProductsAdapter
+import com.example.vlada_rubezhanskaya_pr.model.Product
 import kotlinx.android.synthetic.main.activity_products.*
 import org.jetbrains.anko.longToast
 
@@ -30,7 +34,8 @@ class ProductsActivity : ProductsView, AppCompatActivity() {
     }
 
     override fun displayProducts(products: List<Product>) {
-       productsListView.adapter = ProductsAdapter(products, this@ProductsActivity)
+       productsListView.adapter =
+           ProductsAdapter(products, this@ProductsActivity)
     }
 
     // Взыть из ресурсов

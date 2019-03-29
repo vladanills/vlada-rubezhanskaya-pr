@@ -1,10 +1,14 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.adapter
 
 import android.content.Context
 import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import com.example.vlada_rubezhanskaya_pr.screen.CategoriesBooksActivity
+import com.example.vlada_rubezhanskaya_pr.screen.CategoriesOfficeSup
+import com.example.vlada_rubezhanskaya_pr.model.CategoryProd
+import com.example.vlada_rubezhanskaya_pr.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.category_item.view.*
 import org.jetbrains.anko.layoutInflater
@@ -33,7 +37,7 @@ class CategoriesAdapter(
             .into(holder.itemView.PictureCategory)
         holder.itemView.onClick {
             if (category.title == "Книги") {
-                val intent = Intent(context, CategoriesBooks::class.java)
+                val intent = Intent(context, CategoriesBooksActivity::class.java)
                 context.startActivity(intent)
             }
             if (category.title == "Канцтовары") {

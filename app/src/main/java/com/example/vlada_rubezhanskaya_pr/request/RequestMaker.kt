@@ -1,7 +1,6 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.request
 
 import android.content.Context
-import kotlinx.android.synthetic.main.activity_category.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async

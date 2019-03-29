@@ -1,11 +1,14 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.screen
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.vlada_rubezhanskaya_pr.model.CategoryProd
+import com.example.vlada_rubezhanskaya_pr.R
+import com.example.vlada_rubezhanskaya_pr.adapter.CategoriesAdapter
 import kotlinx.android.synthetic.main.activity_category.*
 import org.jetbrains.anko.*
 
-class CategoryActivity :CategoryView, AppCompatActivity() {
+class CategoryActivity : CategoryView, AppCompatActivity() {
 
     private lateinit var presenter: CategoryPresenter
 
@@ -24,7 +27,8 @@ class CategoryActivity :CategoryView, AppCompatActivity() {
     }
 
     override fun displayCategories(categories: List<CategoryProd>){
-        productsCategoryView.adapter = CategoriesAdapter(categories, this@CategoryActivity)
+        productsCategoryView.adapter =
+            CategoriesAdapter(categories, this@CategoryActivity)
     }
     override fun onBackPressed() {
         presenter.onReturn()

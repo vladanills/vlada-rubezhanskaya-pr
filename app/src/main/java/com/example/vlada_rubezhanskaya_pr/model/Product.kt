@@ -1,4 +1,4 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.model
 import kotlinx.serialization.Serializable
 
 @Serializable

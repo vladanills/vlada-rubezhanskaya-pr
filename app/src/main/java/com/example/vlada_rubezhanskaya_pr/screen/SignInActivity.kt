@@ -1,11 +1,12 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.screen
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.vlada_rubezhanskaya_pr.R
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.signin.*
+import kotlinx.android.synthetic.main.acitivity_sign_in.*
 import org.jetbrains.anko.longToast
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
@@ -13,7 +14,7 @@ class SignInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.signin)
+        setContentView(R.layout.acitivity_sign_in)
         signin_sigin.onClick {
             registrationUser()
 

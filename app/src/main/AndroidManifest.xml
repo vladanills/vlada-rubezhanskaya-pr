@@ -13,13 +13,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".NotFictionCategory">
+        <activity android:name=".screen.NotFictionCategory">
         </activity>
-        <activity android:name=".CategoriesOfficeSup">
+        <activity android:name=".screen.CategoriesOfficeSup">
         </activity>
-        <activity android:name=".FictionCategory">
+        <activity android:name=".screen.FictionCategory">
         </activity>
-        <activity android:name=".CategoriesBooks">
+        <activity android:name=".screen.CategoriesBooksActivity">
         </activity>
         <activity
                 android:name=".CategoryOfficeSuppliesActivity"
@@ -31,23 +31,23 @@
                 android:label="@string/title_activity_category_books"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".SignInActivity">
+        <activity android:name=".screen.SignInActivity">
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".screen.LoginActivity">
         </activity>
         <activity android:name=".ProductActivity">
         </activity>
         <activity android:name=".Main2Activity">
         </activity>
-        <activity android:name=".CategoryActivity">
+        <activity android:name=".screen.CategoryActivity">
         </activity>
-        <activity android:name=".ProductsActivity">
+        <activity android:name=".screen.ProductsActivity">
         </activity>
         <activity android:name=".ProductListActivity">
         </activity>
         <activity android:name=".Category">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".screen.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="android.intent.action.VIEW"/>

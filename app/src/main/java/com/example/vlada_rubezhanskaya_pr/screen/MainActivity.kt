@@ -1,7 +1,8 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.screen
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.vlada_rubezhanskaya_pr.R
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.startActivity

@@ -1,8 +1,10 @@
-package com.example.vlada_rubezhanskaya_pr
+package com.example.vlada_rubezhanskaya_pr.screen
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.vlada_rubezhanskaya_pr.KEY_PRODUCTS_URL
+import com.example.vlada_rubezhanskaya_pr.R
 import kotlinx.android.synthetic.main.activity_fiction_category.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
