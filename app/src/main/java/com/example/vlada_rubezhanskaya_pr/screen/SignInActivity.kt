@@ -37,7 +37,7 @@ class SignInActivity : AppCompatActivity() {
                     return@addOnCompleteListener
                 val intent = Intent(this@SignInActivity, CategoryActivity::class.java)
                 startActivity(intent)
-                Log.d("SignIn", "Пользователь успешно добавлен с uid ${it.result.user.uid}")
+                //Log.d("SiqnIn", "Пользователь успешно добавлен с uid ${it.result.user.uid}")
             }
             .addOnFailureListener {
                 // Вынести в ресурсы

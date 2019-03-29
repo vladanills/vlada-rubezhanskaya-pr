@@ -15,11 +15,12 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         login_login.onClick {
-            loginUser()
+            login_user()
         }
     }
 
-    private fun loginUser(){val email = editText_email.text.toString()
+    private fun login_user() {
+        val email = editText_email.text.toString()
         val password = editText_password.text.toString()
 //            Log.d("LoginActivity", "email is " + email)
 //            Log.d("LoginActivity", "password is " + password)
@@ -29,10 +30,11 @@ class LoginActivity : AppCompatActivity() {
         }
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
             .addOnCompleteListener {
-                if(!it.isSuccessful)
+                if (!it.isSuccessful)
                     return@addOnCompleteListener
                 val intent = Intent(this@LoginActivity, CategoryActivity::class.java)
                 startActivity(intent)
+
             }
             .addOnFailureListener {
                 longToast(getString(R.string.message_type_correct_data))
