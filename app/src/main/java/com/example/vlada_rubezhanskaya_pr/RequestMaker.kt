@@ -20,7 +20,7 @@ interface RequestMaker {
 }
 
 class OkHttpRequestMaker(
-    val context: Context
+    private val context: Context
 ) : RequestMaker {
 
     override fun make(
@@ -79,7 +79,6 @@ class OkHttpRequestMaker(
     fun urlToValidFileName(url: String) = url
         .replace("/", "a")
         .replace(":", "b")
-
 
     private fun makeRequest(url: String) = run {
         val request = Request.Builder()

@@ -7,8 +7,8 @@ import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
 class FileDelegate(
-    val fileName: String,
-    val defaultValue: String
+    private val fileName: String,
+    private val defaultValue: String
 ) : ReadWriteProperty<Activity, String> {
 
     override fun getValue(thisRef: Activity, property: KProperty<*>) = run {

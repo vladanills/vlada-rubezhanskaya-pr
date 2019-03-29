@@ -3,7 +3,6 @@ package com.example.vlada_rubezhanskaya_pr
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.login.*
 import org.jetbrains.anko.longToast
@@ -15,26 +14,27 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
         login_login.onClick {
-            login_user()
+            loginUser()
         }
     }
-    private fun login_user(){val email = editText_email.text.toString()
+
+    private fun loginUser(){val email = editText_email.text.toString()
         val password = editText_password.text.toString()
 //            Log.d("LoginActivity", "email is " + email)
 //            Log.d("LoginActivity", "password is " + password)
         if (email.isEmpty() || (password.isEmpty())) {
-            longToast("Пожалуйста введите e-mail и пароль")
+            longToast(getString(R.string.message_type_password))
             return
         }
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password)
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
             .addOnCompleteListener {
                 if(!it.isSuccessful)
                     return@addOnCompleteListener
-                val intent = Intent(this@LoginActivity,CategoryActivity::class.java)
+                val intent = Intent(this@LoginActivity, CategoryActivity::class.java)
                 startActivity(intent)
             }
             .addOnFailureListener {
-                longToast("Введите корректные данные")
+                longToast(getString(R.string.message_type_correct_data))
             }
 
     }

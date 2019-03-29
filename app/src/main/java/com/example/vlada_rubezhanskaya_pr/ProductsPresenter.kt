@@ -1,16 +1,16 @@
 package com.example.vlada_rubezhanskaya_pr
 
-import android.content.Context
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.list
 import org.kodein.di.direct
 import org.kodein.di.generic.instance
 
 class ProductsPresenter(
-    val productsUrl: String,
-    val view: ProductsView
+    private val productsUrl: String,
+    private val view: ProductsView
 ) {
-    val requestMaker = di.direct.instance<RequestMaker>()
+
+    private val requestMaker = di.direct.instance<RequestMaker>()
 
     fun onAppear() {
         requestMaker.make(
@@ -32,7 +32,10 @@ class ProductsPresenter(
 
 interface ProductsView {
     fun displayProducts(products: List<Product>)
+
 //    fun showExitAlert()
+
     fun displayError()
-    fun repeate()
+
+    fun repeat()
 }

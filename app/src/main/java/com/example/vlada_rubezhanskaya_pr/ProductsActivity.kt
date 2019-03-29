@@ -4,24 +4,23 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_products.*
-import org.jetbrains.anko.alert
 import org.jetbrains.anko.longToast
-import org.jetbrains.anko.noButton
-import org.jetbrains.anko.yesButton
 
-class ProductsActivity() :ProductsView, AppCompatActivity() {
-    override fun repeate() {
+class ProductsActivity : ProductsView, AppCompatActivity() {
+
+    override fun repeat() {
 
     }
 
-    lateinit var presenter: ProductsPresenter
+    private lateinit var presenter: ProductsPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_products)
 
-        val productsUrl = intent.getStringExtra("productsUrl")
-        Log.d("Prod","productsurl is $productsUrl")
+        val productsUrl = intent.getStringExtra(KEY_PRODUCTS_URL)
+        // Можно так заменить, чтобы руками не писать разные теги
+        Log.d(javaClass.name,"products url is $productsUrl")
         presenter = ProductsPresenter(productsUrl, view = this)
     }
 
@@ -34,6 +33,7 @@ class ProductsActivity() :ProductsView, AppCompatActivity() {
        productsListView.adapter = ProductsAdapter(products, this@ProductsActivity)
     }
 
+    // Взыть из ресурсов
     override  fun displayError(){
         longToast("Произошла ошибка")
     }

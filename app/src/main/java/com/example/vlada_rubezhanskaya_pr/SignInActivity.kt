@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.login.*
 import kotlinx.android.synthetic.main.signin.*
 import org.jetbrains.anko.longToast
 import org.jetbrains.anko.sdk27.coroutines.onClick
@@ -24,8 +23,9 @@ class SignInActivity : AppCompatActivity() {
     private fun registrationUser() {
         val email = editText_email_siqnin.text.toString()
         val password = editText_password_siqnin.text.toString()
-        Log.d("LoginActivity", "email is " + email)
-        Log.d("LoginActivity", "password is " + password)
+        Log.d(javaClass.name, "email is $email")
+        Log.d("LoginActivity", "password is $password")
+        // Взять из ресурсов
         if (email.isEmpty() || (password.isEmpty())) {
             longToast("Пожалуйста введите e-mail и пароль")
             return
@@ -36,9 +36,10 @@ class SignInActivity : AppCompatActivity() {
                     return@addOnCompleteListener
                 val intent = Intent(this@SignInActivity, CategoryActivity::class.java)
                 startActivity(intent)
-                Log.d("SiqnIn", "Пользователь успешно добавлен с uid ${it.result.user.uid}")
+                Log.d("SignIn", "Пользователь успешно добавлен с uid ${it.result.user.uid}")
             }
             .addOnFailureListener {
+                // Вынести в ресурсы
                 longToast("Введите корректные данные")
             }
     }

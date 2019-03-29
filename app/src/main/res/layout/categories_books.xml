@@ -7,11 +7,12 @@
         android:background="#FFFF">
     <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
         <ImageView
-                android:id="@+id/PictureFiction"
+                android:id="@+id/vPictureFiction"
                 android:background="@drawable/fic2"
                 android:layout_width="match_parent"
                 android:layout_height="305dp"
                 android:scaleType="centerCrop"
+                android:onClick="onPictureFictionClicked"
         />
         <TextView
                 android:id="@+id/textFiction"
@@ -27,14 +28,14 @@
     </FrameLayout>
     <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
         <ImageView
-                android:id="@+id/PictureNotFiction"
+                android:id="@+id/vPictureNotFiction"
                 android:background="@drawable/fk"
                 android:layout_width="match_parent"
                 android:layout_height="305dp"
                 android:scaleType="centerCrop"
         />
         <TextView
-                android:id="@+id/textnotFiction"
+                android:id="@+id/textNotFiction"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:layout_gravity="center"
