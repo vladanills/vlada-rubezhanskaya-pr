@@ -23,6 +23,7 @@ class CategoriesBooksActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // после просмотра удалить, а то не будет работать
         // Если без anko:
         vPictureFiction.setOnClickListener {
             // action
