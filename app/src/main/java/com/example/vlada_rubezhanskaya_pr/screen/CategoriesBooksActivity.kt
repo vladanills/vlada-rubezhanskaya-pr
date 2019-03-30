@@ -25,21 +25,21 @@ class CategoriesBooksActivity : AppCompatActivity() {
 
         // после просмотра удалить, а то не будет работать
         // Если без anko:
-        vPictureFiction.setOnClickListener {
-            // action
-        }
-        // полная запись испоьзования метода выше:
-        vPictureFiction.setOnClickListener(
-            object : View.OnClickListener {
-                override fun onClick(v: View?) {
-                    // action
-                }
-            }
-        )
+//        vPictureFiction.setOnClickListener {
+//            // action
+//        }
+//        // полная запись испоьзования метода выше:
+//        vPictureFiction.setOnClickListener(
+//            object : View.OnClickListener {
+//                override fun onClick(v: View?) {
+//                    // action
+//                }
+//            }
+//        )
     }
 
     // вариант без анко, в разметке прописан атрибут onClick
-    fun onPictureFictionClicked(view: View) {
+//    fun onPictureFictionClicked(view: View) {
         // action
-    }
+//    }
 }
