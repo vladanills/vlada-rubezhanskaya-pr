@@ -2,15 +2,19 @@
 <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="fill_parent"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
         android:layout_height="fill_parent">
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
                  xmlns:app="http://schemas.android.com/apk/res-auto"
-                 android:layout_height="match_parent"
+                 android:layout_height="wrap_content"
                  android:layout_width="wrap_content"
-                 android:background="@drawable/back1">
-        <GridLayout
+                 >
+        <ImageView
                 android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:scaleType="centerCrop" android:src="@drawable/back2"/>
+        <GridLayout
+                android:layout_width="399dp"
                 android:layout_height="wrap_content"
                 android:rowCount="2"
                 android:columnCount="2"
@@ -52,14 +56,19 @@
                     android:layout_margin="5dp"
                     app:cardElevation="5dp"
                     app:cardCornerRadius="5dp">
-                <LinearLayout android:layout_width="wrap_content"
-                              android:layout_height="wrap_content"
-                              android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
                     <ImageView
                             android:id="@+id/pictureView2"
-                            android:background="@drawable/comp"
-                            android:layout_width="200dp"
-                            android:layout_height="200dp"/>
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/comp"/>
                     <TextView
                             android:id="@+id/titleView2"
                             android:text="Компьютерные технологии"
@@ -69,6 +78,7 @@
                             android:layout_marginLeft="5dp"
                             android:layout_marginBottom="7dp"
                             android:textColor="#146128"
+                            android:background="#FFFF"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
 
@@ -87,9 +97,8 @@
                               android:orientation="vertical">
                     <ImageView
                             android:id="@+id/pictureView3"
-                            android:background="@drawable/hog"
                             android:layout_width="211dp"
-                            android:layout_height="200dp"/>
+                            android:layout_height="200dp" android:scaleType="fitCenter" android:src="@drawable/hog"/>
                     <TextView
                             android:id="@+id/titleView3"
                             android:text="Научная литература"
@@ -118,8 +127,8 @@
                     <ImageView
                             android:id="@+id/pictureView4"
                             android:layout_width="match_parent"
-                            android:layout_height="199dp" android:background="@drawable/kul"
-                            android:scaleType="centerCrop"/>
+                            android:layout_height="199dp"
+                            android:scaleType="centerCrop" android:src="@drawable/kul"/>
                     <TextView
                             android:id="@+id/titleView4"
                             android:text="Кулинарные книги"

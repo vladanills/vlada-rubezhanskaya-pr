@@ -14,9 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="184f78a0-f370-46ca-b877-a06fb2dd68d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/back2.9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_fiction_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_fiction_category.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_not_fiction_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_not_fiction_category.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,10 +61,10 @@
           <entry key="java" value="2" />
           <entry key="jpg" value="20" />
           <entry key="json" value="1" />
-          <entry key="kt" value="188" />
+          <entry key="kt" value="189" />
           <entry key="png" value="2" />
           <entry key="properties" value="2" />
-          <entry key="xml" value="120" />
+          <entry key="xml" value="123" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -74,25 +74,25 @@
           <entry key="Image" value="22" />
           <entry key="JAVA" value="2" />
           <entry key="JSON" value="1" />
-          <entry key="Kotlin" value="188" />
+          <entry key="Kotlin" value="189" />
           <entry key="Properties" value="2" />
-          <entry key="XML" value="120" />
+          <entry key="XML" value="123" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="76" />
           <entry key="kt" value="9424" />
-          <entry key="txt" value="499" />
-          <entry key="xml" value="5004" />
+          <entry key="txt" value="543" />
+          <entry key="xml" value="5171" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="76" />
           <entry key="Kotlin" value="9424" />
-          <entry key="PLAIN_TEXT" value="499" />
-          <entry key="XML" value="5004" />
+          <entry key="PLAIN_TEXT" value="543" />
+          <entry key="XML" value="5171" />
         </counts>
       </usages-collector>
     </session>
@@ -108,21 +108,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fiction_category.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-              <folding>
-                <element signature="e#941#2531#0" />
-                <element signature="e#2544#4045#0" />
-                <element signature="e#4058#5516#0" />
-                <element signature="e#5529#7172#0" />
-                <element signature="e#7185#8646#0" />
-                <element signature="e#8659#10106#0" />
-              </folding>
+          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="183" column="58" selection-start-line="183" selection-start-column="58" selection-end-line="183" selection-end-column="58" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_not_fiction_category.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vlada_rubezhanskaya_pr/request/RequestMaker.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-513" />
           </provider>
         </entry>
       </file>
@@ -2585,6 +2600,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vlada_rubezhanskaya_pr/screen/LoginActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_fiction_category.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_not_fiction_category.xml" />
       </list>
     </option>
   </component>
@@ -2623,13 +2639,38 @@
             <path>
               <item name="vlada-rubezhanskaya-pr" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="vlada-rubezhanskaya-pr" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="vlada_rubezhanskaya_pr" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlada-rubezhanskaya-pr" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="vlada_rubezhanskaya_pr" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlada-rubezhanskaya-pr" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="vlada_rubezhanskaya_pr" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="screen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlada-rubezhanskaya-pr" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="vlada-rubezhanskaya-pr" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -2747,7 +2788,7 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -2827,7 +2868,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553981007196</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="delete extra space in fiction categories">
+      <created>1554026722224</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554026722225</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2860,7 +2908,7 @@
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.41342282" side_tool="true" weight="0.26666668" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.32907802" />
-      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.5865772" visible="true" weight="0.29325512" />
+      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.5865772" visible="true" weight="0.28368795" />
       <window_info anchor="bottom" id="Android Profiler" order="10" />
       <window_info anchor="bottom" auto_hide="true" x="395" y="372" width="117" height="354" id="Component Tree" order="11" sideWeight="0.50070924" side_tool="true" type="FLOATING" weight="0.23829788" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.3295302" />
@@ -2906,25 +2954,10 @@
     <MESSAGE value="changes in login xml" />
     <MESSAGE value="keyboard in login&#10;com" />
     <MESSAGE value="auto filling email authorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto filling email authorization" />
+    <MESSAGE value="delete extra space in fiction categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete extra space in fiction categories" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_category.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/category_item.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
@@ -3030,14 +3063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_not_fiction_category.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/categories_office_sup.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -3095,19 +3120,28 @@
       <provider editor-type-id="ninepatcheditor" />
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fiction_category.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_product.xml">
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fiction_category.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="183" column="58" selection-start-line="183" selection-start-column="58" selection-end-line="183" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vlada_rubezhanskaya_pr/request/RequestMaker.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#941#2531#0" />
-            <element signature="e#2544#4045#0" />
-            <element signature="e#4058#5516#0" />
-            <element signature="e#5529#7172#0" />
-            <element signature="e#7185#8646#0" />
-            <element signature="e#8659#10106#0" />
-          </folding>
+        <state relative-caret-position="-513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_not_fiction_category.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
         </state>
       </provider>
     </entry>
