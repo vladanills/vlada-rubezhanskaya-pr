@@ -24,11 +24,11 @@ class LoginActivity : AppCompatActivity() {
         }
     login_login.onClick()
     {
-        login_user()
+        loginUser()
     }
 }
 
-private fun login_user() {
+private fun loginUser() {
     val email = vLoginInputEmail.text.toString()
     val password = editText_password.text.toString()
 //            Log.d("LoginActivity", "email is " + email)
