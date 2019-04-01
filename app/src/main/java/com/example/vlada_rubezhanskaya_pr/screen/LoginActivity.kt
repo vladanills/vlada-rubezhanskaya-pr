@@ -6,7 +6,6 @@ import android.os.Bundle
 import com.example.vlada_rubezhanskaya_pr.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
-import org.jetbrains.anko.email
 import org.jetbrains.anko.longToast
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
@@ -18,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
         val auth = FirebaseAuth.getInstance()
         if (auth.currentUser != null) {
             val email = auth.currentUser!!.email
-            editText_email.setText(email)
+            vLoginInputEmail.setText(email)
 //            val intent = Intent(this@LoginActivity, CategoryActivity::class.java)
 //            startActivity(intent)
 //            finish()
@@ -30,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
 }
 
 private fun login_user() {
-    val email = editText_email.text.toString()
+    val email = vLoginInputEmail.text.toString()
     val password = editText_password.text.toString()
 //            Log.d("LoginActivity", "email is " + email)
 //            Log.d("LoginActivity", "password is " + password)
