@@ -15,8 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="184f78a0-f370-46ca-b877-a06fb2dd68d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_fiction_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_fiction_category.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_not_fiction_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_not_fiction_category.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +81,7 @@
         <counts>
           <entry key="gradle" value="76" />
           <entry key="kt" value="9424" />
-          <entry key="txt" value="543" />
+          <entry key="txt" value="558" />
           <entry key="xml" value="5171" />
         </counts>
       </usages-collector>
@@ -91,7 +89,7 @@
         <counts>
           <entry key="Groovy" value="76" />
           <entry key="Kotlin" value="9424" />
-          <entry key="PLAIN_TEXT" value="543" />
+          <entry key="PLAIN_TEXT" value="558" />
           <entry key="XML" value="5171" />
         </counts>
       </usages-collector>
@@ -2875,7 +2873,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554026722225</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="delete extra space in notfiction categories&#10;proportional pictures">
+      <created>1554056116971</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554056116971</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2888,7 +2893,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="top" id="Preview" order="0" side_tool="true" weight="0.26539588" />
@@ -2955,7 +2960,8 @@
     <MESSAGE value="keyboard in login&#10;com" />
     <MESSAGE value="auto filling email authorization" />
     <MESSAGE value="delete extra space in fiction categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete extra space in fiction categories" />
+    <MESSAGE value="delete extra space in notfiction categories&#10;proportional pictures" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete extra space in notfiction categories&#10;proportional pictures" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/category_item.xml">
