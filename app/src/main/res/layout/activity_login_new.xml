@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/vContainerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_height_head_image"
+                android:src="@drawable/image_login_head"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/vLoginImageHead"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/size_text_head"
+                android:textColor="#fff"
+                android:fontFamily="@font/vengeance"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toTopOf="@+id/vLoginImageHead"
+                app:layout_constraintBottom_toBottomOf="@+id/vLoginImageHead"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintVertical_bias="0.32999998"
+                android:id="@+id/vLoginTitle"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Введите email и пароль"
+                android:textSize="@dimen/size_text_title"
+                android:id="@+id/vLoginInputsTitle"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/vLoginImageHead"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"/>
+
+        <EditText
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:autofillHints="email"
+                android:imeOptions="actionDone"
+                android:id="@+id/vLoginInputEmail"
+                android:hint="@string/hint_input_email"
+                android:layout_marginTop="@dimen/padding_extra_large"
+                app:layout_constraintTop_toBottomOf="@+id/vLoginInputsTitle"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"/>
+        <EditText
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:autofillHints="password"
+                android:id="@+id/vLoginInputPassword"
+                android:hint="@string/hint_input_email"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/vLoginInputEmail"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"/>
+        <Button
+                android:id="@+id/vLoginButtonLogin"
+                android:layout_width="@dimen/login_width_button_login"
+                android:layout_height="wrap_content"
+                android:text="@string/title_button_login"
+                android:layout_gravity="bottom"
+                android:textColor="#1F5C36"
+                android:background="@drawable/shape_button"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>
